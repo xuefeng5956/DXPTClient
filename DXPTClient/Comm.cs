@@ -15,7 +15,7 @@ namespace DXPTClient
         string login_name = "qlyytz";
         string password = "qlyytz123";
 
-        public void SendMessage(string phoneNum,string msg, string sendTime)
+        public string SendMessage(string phoneNum,string msg, string sendTime)
         {
             WriteLog(DateTime.Now.ToString("yyyy-MM-dd"), "[" + DateTime.Now.ToString() + "]发送短信到：" 
                 + phoneNum + ",内容：" + msg + ",发送时间：" + sendTime);
@@ -23,6 +23,8 @@ namespace DXPTClient
             string result = service.SendSms4(login_name, password, phoneNum, msg, sendTime, "", "");
 
             WriteLog(DateTime.Now.ToString("yyyy-MM-dd"), "[" + DateTime.Now.ToString() + "]发送结果：" + result);
+
+            return result;
         }
 
         /// <summary>
