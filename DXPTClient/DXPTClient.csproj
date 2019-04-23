@@ -64,10 +64,10 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://10.10.8.6:809/service1.asmx">
+    <WebReferenceUrl Include="http://192.168.8.6:809/service1.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\WebReference\</RelPath>
-      <UpdateFromURL>http://10.10.8.6:809/service1.asmx</UpdateFromURL>
+      <UpdateFromURL>http://192.168.8.6:809/service1.asmx</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>

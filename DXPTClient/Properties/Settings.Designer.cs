@@ -26,7 +26,7 @@ namespace DXPTClient.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://10.10.8.6:809/service1.asmx")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://192.168.8.6:809/service1.asmx")]
         public string DXPTClient_WebReference_Service1 {
             get {
                 return ((string)(this["DXPTClient_WebReference_Service1"]));

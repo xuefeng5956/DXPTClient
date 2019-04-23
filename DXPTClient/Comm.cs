@@ -38,6 +38,11 @@ namespace DXPTClient
             string path = Neusoft.FrameWork.WinForms.Classes.Function.CurrentPath + "\\Logs\\DXPTLog";
             try
             {
+                if (!System.IO.Directory.Exists(path))
+                {
+                    System.IO.Directory.CreateDirectory(path);
+                }
+
                 fileName = path + "\\" + fileName + ".log";
 
                 if (!System.IO.File.Exists(fileName))
